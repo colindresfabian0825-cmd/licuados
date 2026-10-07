@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>los mejor  de licuados | Licuados y Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importando fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- Representación del logotipo en texto y CSS -->
+            <span class="logo-icon">🍹</span> Natura<span class="highlight">Blend</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('inicio')" class="active" id="nav-inicio">Inicio</a></li>
+                <li><a href="#" onclick="showSection('javascript')" id="nav-javascript">JavaScript</a></li>
+                <li><a href="#" onclick="showSection('jquery')" id="nav-jquery">jQuery</a></li>
+                <li><a href="#" onclick="showSection('json')" id="nav-json">JSON</a></li>
+                <li><a href="#" onclick="showSection('hosting')" id="nav-hosting">Hosting</a></li>
+                <li><a href="#" onclick="showSection('quiz')" id="nav-quiz">Cuestionario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: INICIO (MARCA Y PRODUCTO) -->
+        <section id="inicio" class="content-section">
+            <h1>Bienvenido a lo mejor de licuados</h1>
+            <h2>Licuados Artesanales y Naturales</h2>
+            
+            <div class="brand-info">
+                <p><strong>Nuestra Propuesta de Valor:</strong> "El sabor puro de la naturaleza en cada sorbo. Sin azúcares añadidos, sin conservantes, 100% fruta real."</p>
+                <p><strong>Público Objetivo:</strong> Personas jóvenes y adultas que buscan un estilo de vida saludable, deportistas, y amantes de los productos orgánicos y artesanales.</p>
+                <p><strong>Descripción:</strong> NaturaBlend ofrece una línea premium de licuados artesanales preparados al instante con frutas de temporada y superalimentos (chía, maca, espirulina).</p>
+            </div>
+
+            <!-- SECCIÓN DE PRODUCTOS DESTACADOS CON IMÁGENES -->
+            <h3>Nuestros Licuados Artesanales</h3>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=600&q=80" alt="Licuado Verde Detox" class="product-img">
+                    <div class="product-info">
+                        <h4>Verde Detox</h4>
+                        <p>Espinaca, manzana verde, pepino, jengibre y agua de coco.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=600&q=80" alt="Licuado Berry Vital" class="product-img">
+                    <div class="product-info">
+                        <h4>Berry Vital</h4>
+                        <p>Fresas, frambuesas, arándanos, leche de almendras y semillas de chía.</p>
+                        <span class="price">$3.75</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=600&q=80" alt="Licuado Pasión Tropical" class="product-img">
+                    <div class="product-info">
+                        <h4>Pasión Tropical</h4>
+                        <p>Mango, maracuyá, plátano y un toque de maracuyá natural.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-info">
+                <h3>Nuestra Paleta de Colores y Psicología</h3>
+                <div class="color-boxes">
+                    <div class="color-box" style="background-color: #4CAF50; color: white;">#4CAF50<br>Verde Naturaleza</div>
+                    <div class="color-box" style="background-color: #FF9800; color: white;">#FF9800<br>Naranja Frutal</div>
+                    <div class="color-box" style="background-color: #2C3E50; color: white;">#2C3E50<br>Azul Noche</div>
+                </div>
+                <ul>
+                    <li><strong>#4CAF50 (Verde):</strong> Transmite frescura, salud, ecología y el origen natural de nuestros ingredientes.</li>
+                    <li><strong>#FF9800 (Naranja):</strong> Evoca energía, vitalidad, alegría y abre el apetito. Recuerda a frutas tropicales como el mango y la papaya.</li>
+                    <li><strong>#2C3E50 (Azul/Gris oscuro):</strong> Aporta profesionalidad, elegancia y contraste para facilitar la lectura, dando un toque "premium" a la marca.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: JAVASCRIPT -->
+        <section id="javascript" class="content-section hidden">
+            <h1>JavaScript (JS Vanilla)</h1>
+            <p>JavaScript es un lenguaje de programación fundamental para la web moderna. Permite implementar funciones complejas en páginas web, creando interactividad.</p>
+            
+            <h3>Diferencia entre HTML, CSS y JS</h3>
+            <ul>
+                <li><strong>HTML:</strong> Es el esqueleto o la estructura de la página (textos, imágenes, enlaces).</li>
+                <li><strong>CSS:</strong> Es la piel o el estilo (colores, fuentes, diseño).</li>
+                <li><strong>JavaScript:</strong> Son los músculos, el comportamiento (qué pasa al hacer clic, animaciones, cálculos).</li>
+            </ul>
+
+            <h3>Conceptos Básicos</h3>
+            <ul>
+                <li><strong>Variables:</strong> Espacios de memoria para guardar datos (ej. <code>let sabor = "Fresa";</code>).</li>
+                <li><strong>Funciones:</strong> Bloques de código reutilizables que realizan una tarea específica.</li>
+                <li><strong>Eventos:</strong> Acciones que ocurren en la web (ej. <i>click</i>, <i>hover</i>, <i>submit</i>).</li>
+            </ul>
+
+            <h3>Ejemplo Práctico</h3>
+            <p>Haz clic en el siguiente botón para ver un evento de JS en acción:</p>
+            <button onclick="saludarJS()" class="demo-btn">Comprar Licuado de Fresa</button>
+
+            <pre><code>// Código JavaScript del botón
+function saludarJS() {
+    alert("¡Excelente elección! Tu licuado artesanal y 100% natural está en camino 🍹.");
+}</code></pre>
+
+            <div class="bibliografia">
+                <strong>Fuentes consultadas:</strong> <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: JQUERY -->
+        <section id="jquery" class="content-section hidden">
+            <h1>jQuery</h1>
+            <p>jQuery es una biblioteca rápida, pequeña y rica en funciones de JavaScript. Nació en 2006 para simplificar la forma en que los desarrolladores interactuaban con el HTML y solucionar problemas de compatibilidad entre diferentes navegadores.</p>
+
+            <h3>Sintaxis Básica</h3>
+            <p>El símbolo del dólar <code>$</code> es el alias de jQuery. La sintaxis básica es: <code>$(selector).accion()</code></p>
+
+            <h3>Ventajas y Desventajas</h3>
+            <ul>
+                <li><strong>Ventajas:</strong> Sintaxis muy corta, fácil de aprender, muchos plugins disponibles.</li>
+                <li><strong>Desventajas:</strong> Con el JS moderno (Vanilla JS), muchas de las funciones de jQuery ya están integradas de forma nativa. Añadir la librería puede hacer la página más pesada innecesariamente.</li>
+            </ul>
+
+            <h3>Cuadro Comparativo: JS Vanilla vs jQuery</h3>
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>JavaScript Moderno (Vanilla)</th>
+                        <th>jQuery</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seleccionar un elemento</td>
+                        <td><code>document.querySelector('#miId')</code></td>
+                        <td><code>$('#miId')</code></td>
+                    </tr>
+                    <tr>
+                        <td>Ocultar un elemento</td>
+                        <td><code>elemento.style.display = 'none';</code></td>
+                        <td><code>$('#miId').hide();</code></td>
+                    </tr>
+                    <tr>
+                        <td>Añadir un evento click</td>
+                        <td><code>btn.addEventListener('click', fn);</code></td>
+                        <td><code>$('#btn').click(fn);</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="bibliografia">
+                <strong>Fuentes consultadas:</strong> <a href="https://jquery.com/" target="_blank">Sitio Oficial de jQuery</a> | <a href="https://www.w3schools.com/jquery/" target="_blank">W3Schools jQuery</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: JSON -->
+        <section id="json" class="content-section hidden">
+            <h1>JSON (JavaScript Object Notation)</h1>
+            <p>JSON es un formato de texto ligero para el intercambio de datos. Es fácil de leer y escribir para los humanos, y fácil de analizar y generar para las máquinas. Se ha convertido en el estándar para enviar datos entre un servidor y una aplicación web.</p>
+
+            <h3>Estructura Básica</h3>
+            <p>Se basa en dos estructuras: pares <strong>clave-valor</strong> (como los objetos) y listas ordenadas de valores (<strong>arreglos</strong>).</p>
+
+            <h3>Comparación Visual</h3>
+            <div class="json-compare">
+                <div class="code-box">
+                    <h4>Objeto JavaScript</h4>
+<pre><code>const licuado = {
+  sabor: "Mango",
+  precio: 3.50,
+  disponible: true
+};</code></pre>
+                </div>
+                <div class="code-box">
+                    <h4>Cadena JSON</h4>
+<pre><code>{
+  "sabor": "Mango",
+  "precio": 3.50,
+  "disponible": true
+}</code></pre>
+                </div>
+            </div>
+            <p><em>Nota: En JSON, las claves obligatoriamente deben ir entre comillas dobles.</em></p>
+
+            <div class="bibliografia">
+                <strong>Fuentes consultadas:</strong> <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/JSON" target="_blank">MDN Web Docs - Trabajando con JSON</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: HOSTING Y DOMINIOS -->
+        <section id="hosting" class="content-section hidden">
+            <h1>Web Hosting y Dominios</h1>
+            <p>Para que una página web sea accesible en todo el mundo, necesita dos cosas fundamentales: un lugar donde guardar los archivos (Hosting) y un nombre fácil de recordar (Dominio).</p>
+
+            <h3>1. Web Hosting (Alojamiento)</h3>
+            <p>Es el espacio en servidores de internet donde se almacenan los archivos HTML, CSS, JS e imágenes de tu web.</p>
+            <ul>
+                <li><strong>Compartido:</strong> Muchos sitios en un mismo servidor (económico).</li>
+                <li><strong>VPS:</strong> Servidor Privado Virtual, más recursos dedicados.</li>
+                <li><strong>Nube (Cloud):</strong> Red de servidores conectados.</li>
+            </ul>
+            <p><strong>¿Qué es Vercel?</strong> Es una plataforma en la nube optimizada para sitios estáticos (como este) y frameworks frontend. Permite desplegar aplicaciones directamente desde GitHub en segundos.</p>
+
+            <h3>2. Dominios</h3>
+            <p>Es la dirección de tu sitio web (ej. <code>naturablend.com</code>).</p>
+            <ul>
+                <li><strong>TLD (Top Level Domain):</strong> La extensión final (.com, .org, .net, .sv).</li>
+                <li><strong>Subdominio:</strong> Un prefijo antes del dominio principal (ej. <code>tienda.naturablend.com</code>). En Vercel, tu sitio obtiene un subdominio gratuito: <code>tu-proyecto.vercel.app</code>.</li>
+            </ul>
+
+            <h3>Propagación DNS</h3>
+            <p>Cuando registras o cambias de servidor un dominio, el <strong>DNS (Sistema de Nombres de Dominio)</strong> necesita actualizar su "directorio telefónico" global para decirle al mundo en qué servidor está ahora tu página. Este proceso de actualización a través de los servidores mundiales toma desde unos minutos hasta 48 horas.</p>
+
+            <div class="bibliografia">
+                <strong>Fuentes consultadas:</strong> <a href="https://vercel.com/docs" target="_blank">Documentación Vercel</a> | <a href="https://www.hostinger.es/tutoriales/que-es-un-dominio" target="_blank">Hostinger: Qué es un dominio</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: CUESTIONARIO INTERACTIVO -->
+        <section id="quiz" class="content-section hidden">
+            <h1>Cuestionario de Autoevaluación</h1>
+            <p>Pon a prueba lo que has aprendido sobre tecnologías web y nuestro producto.</p>
+
+            <form id="quizForm" onsubmit="evaluarCuestionario(event)">
+                
+                <div class="question">
+                    <p><strong>1. ¿Qué tecnología se encarga del ESTILO y diseño visual de una página web?</strong></p>
+                    <label><input type="radio" name="q1" value="a"> HTML</label><br>
+                    <label><input type="radio" name="q1" value="b" required> CSS</label><br>
+                    <label><input type="radio" name="q1" value="c"> JavaScript</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>2. ¿Qué símbolo se utiliza como alias principal en jQuery?</strong></p>
+                    <label><input type="radio" name="q2" value="a"> #</label><br>
+                    <label><input type="radio" name="q2" value="b"> @</label><br>
+                    <label><input type="radio" name="q2" value="c" required> $</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>3. En JSON, las "claves" (keys) siempre deben ir entre:</strong></p>
+                    <label><input type="radio" name="q3" value="a"> Comillas simples (' ')</label><br>
+                    <label><input type="radio" name="q3" value="b" required> Comillas dobles (" ")</label><br>
+                    <label><input type="radio" name="q3" value="c"> Sin comillas</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>4. ¿Qué es Vercel principalmente?</strong></p>
+                    <label><input type="radio" name="q4" value="a" required> Una plataforma de hosting para sitios estáticos y frontend.</label><br>
+                    <label><input type="radio" name="q4" value="b"> Un lenguaje de programación basado en Java.</label><br>
+                    <label><input type="radio" name="q4" value="c"> Una librería de animaciones.</label>
+                </div>
+
+                <div class="question">
+                    <p><strong>5. NaturaBlend, nuestro producto, utiliza azúcares añadidos en sus licuados.</strong></p>
+                    <label><input type="radio" name="q5" value="a"> Verdadero</label><br>
+                    <label><input type="radio" name="q5" value="b" required> Falso</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Respuestas</button>
+            </form>
+
+            <div id="quizResult" class="hidden result-box"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NaturaBlend - Proyecto Académico de Desarrollo Web</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
